@@ -1,11 +1,13 @@
 <div class="login">
   <h2 class="login__title">Login</h2>
   <form (ngSubmit)="onSubmit()" [formGroup]="form" appFormSubmit autocomplete="on" class="form form_vertical">
-    <div class="bk-form__field">
-      <input appFormErrors class="form__input form__input_w100 login__email" formControlName="email" placeholder="Email" type="email">
+    <div class="form__field">
+      <input [errorClass]="'form__input_invalid'" appFormErrors class="form__input form__input_w100 login__email" formControlName="email"
+             placeholder="Email" type="email">
     </div>
-    <div class="bk-form__field">
-      <input appFormErrors class="form__input form__input_w100 login__password" formControlName="password" placeholder="Password"
+    <div class="form__field">
+      <input [errorClass]="'form__input_invalid'" appFormErrors class="form__input form__input_w100 login__password"
+             formControlName="password" placeholder="Password"
              type="password">
     </div>
     <button class="login__button button button_primary" type="submit">Log in</button>

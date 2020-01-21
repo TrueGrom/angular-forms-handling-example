@@ -1,0 +1,21 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.error {
+  margin-top: 8px;
+  margin-bottom: -8px;
+  color: #EB5757;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+
+  &_animated {
+    animation: fadeIn 300ms linear;
+  }
+}
