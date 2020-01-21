@@ -14,11 +14,11 @@ import {
   ViewContainerRef
 } from '@angular/core';
 import { NgControl, ValidationErrors } from '@angular/forms';
-import { COMMON_FORM_ERRORS, CommonFormErrors } from '@core/errors/common-form-errors';
-import { InputErrorComponent } from '@shared/components/input-error/input-error.component';
-import { FormSubmitDirective } from '@shared/directives/form-submit/form-submit.directive';
 import { EMPTY, fromEvent, merge, Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { COMMON_FORM_ERRORS, CommonFormErrors } from '../../../core/errors/common-form-errors';
+import { InputErrorComponent } from '../../components/input-error/input-error.component';
+import { FormSubmitDirective } from '../form-submit/form-submit.directive';
 
 @Directive({
   selector: '[appFormErrors]'
